@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JvaScript Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-box">
+        <div class="inBox">
+
+            <div class="formBox">
+
+                <h1 class="headi">Fill Your Form</h1>
+
+                <form action="#" method="get" name="subForm" onsubmit="return Validate()">
+
+                    <label for="firstName">First Name : <br><input type="text" name="fname" id="firstName"
+                            class="inpMod" onblur="validateString(this.id) " placeholder="First Name"></label>
+                    <br>
+                    <label for="lastName">Last Name : <br><input type="text" name="lname" id="lastName"
+                            class="inpMod" onblur="validateString2(this.id)"placeholder="Last Name"></label>
+                    <br>
+                    <label for="emailer">Email : <br><input type="text" name="email" id="emailer"
+                            class="inpMod" onblur="validateEmail(this.id)" placeholder="Email"></label>
+                    <br>
+                    <label for="passW">Phone Number : <br><input type="text" name="phNumber" id="phNum"
+                            class="inpMod" onblur="validNumber(this.id)" placeholder="Phone Number"></label>
+                    <br>
+                    <label for="passW">Password :<br><input type="password" name="Password" id="passW"
+                            class="inpMod" placeholder="First Name"></label>
+                    <br>
+                    
+                    <br>
+                    <input type="submit" value="Submit" name="button" id="inpB">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
